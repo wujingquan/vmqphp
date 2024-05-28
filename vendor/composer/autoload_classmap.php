@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'QrReader' => $vendorDir . '/khanamiryan/qrcode-detector-decoder/lib/QrReader.php',
+    'Stringable' => $vendorDir . '/myclabs/php-enum/stubs/Stringable.php',
     'Zxing\\Binarizer' => $vendorDir . '/khanamiryan/qrcode-detector-decoder/lib/Binarizer.php',
     'Zxing\\BinaryBitmap' => $vendorDir . '/khanamiryan/qrcode-detector-decoder/lib/BinaryBitmap.php',
     'Zxing\\ChecksumException' => $vendorDir . '/khanamiryan/qrcode-detector-decoder/lib/ChecksumException.php',
