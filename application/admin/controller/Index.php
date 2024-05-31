@@ -104,6 +104,9 @@ class Index
         return $output;
     }
     public function checkUpdate(){
+        if (!config('custom.check_update')) {
+            return json($this->getReturn(-1, "未开启更新检查"));
+        }
         if (!Session::has("admin")){
             return json($this->getReturn(-1,"没有登录"));
         }
